@@ -14,6 +14,9 @@
 
 const express = require("express");
 const app = express();
+
+app.use(express.static('public'))
+
 const port = 3000;
 const host = "http://127.0.0.1";
 
