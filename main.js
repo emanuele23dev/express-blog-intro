@@ -17,6 +17,8 @@ const app = express();
 const port = 3000;
 const host = "http://127.0.0.1";
 
+const postsEl = require("./Controllers/PostsController.js")
+
 
 app.listen(port, () => {
   console.log(`Example app listening on ${host}:${port}`);
@@ -24,5 +26,8 @@ app.listen(port, () => {
 
 
 app.get("/", (req, res) => {
-  res.send("Ciao Mondo!");
+  res.send("<h1>Blog Express</h1>");
 });
+
+
+app.get('/posts', postsEl.index)
