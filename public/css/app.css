@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(228, 20, 173);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lista_post {
+  list-style: none;
+}
+
+.card {
+  border-radius: 0;
+}

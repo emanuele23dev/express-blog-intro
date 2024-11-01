@@ -1,12 +1,10 @@
 const posts = require("../Data/posts.js")
 
 function index(req, res) {
-    res.json({
-        posts: posts,
-        count: posts.length
-    })
+    res.json(posts)
 }
 
 module.exports = {
-    index
+    index                       
 }
+ 

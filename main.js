@@ -13,14 +13,14 @@
 // Testare nel browser.
 
 const express = require("express");
-const app = express();
+const postsEl = require("./Controllers/PostsController.js")
 
+
+const app = express();
 app.use(express.static('public'))
 
-const port = 3000;
+const port = 3010;
 const host = "http://127.0.0.1";
-
-const postsEl = require("./Controllers/PostsController.js")
 
 
 app.listen(port, () => {
@@ -28,9 +28,21 @@ app.listen(port, () => {
 });
 
 
-app.get("/", (req, res) => {
-  res.send("<h1>Blog Express</h1>");
+app.get('/', (req, res) => {
+    res.send("<h1>Blog Express</h1>");
 });
 
-
 app.get('/posts', postsEl.index)
+
+
+
+
+
+
+
+
+
+
+
+
+
