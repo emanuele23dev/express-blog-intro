@@ -19,7 +19,7 @@ const postsEl = require("./Controllers/PostsController.js")
 const app = express();
 app.use(express.static('public'))
 
-const port = 3010;
+const port = 3000;
 const host = "http://127.0.0.1";
 
 

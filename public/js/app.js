@@ -1,6 +1,6 @@
 let ulEl = document.querySelector(".lista_post");
 
-axios.get("http://127.0.0.1:3010/posts").then((response) => {
+axios.get("http://127.0.0.1:3000/posts").then((response) => {
   const posts = response.data;
   console.log(posts);
 
